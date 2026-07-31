@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef Store | PS4 Jailbreak Host</title>
+
+    <link rel="stylesheet" href="includes/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+<div class="header">
+
+    <div class="title-box">
+
+        
+        <div>
+
+            <h1>Yousef Store</h1>
+
+            <p class="subtitle">PS4 Jailbreak Host</p>
+
+            <p class="firmware">Supports FW 6.00 – 11.02 </p>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+    <hr>
+
+    <!-- Kernel -->
+
+    <div class="btn-container">
+
+        <form id="kernel-options">
+
+            <label class="radio-card">
+
+                <input type="radio"
+                       name="kernel"
+                       id="netctrl-exploit"
+                       value="netctrl">
+
+                <span>NetCtrl</span>
+
+            </label>
+
+            <label class="radio-card">
+
+                <input type="radio"
+                       name="kernel"
+                       id="lapse-exploit"
+                       value="lapse">
+
+                <span>Lapse</span>
+
+            </label>
+
+        </form>
+
+        <button id="jeilbrek">
+             Launch Jailbreak
+        </button>
+
+        <div class="autoJb">
+
+            <label id="autoJbLabel"
+                   for="autoJbInput">
+
+                Auto Jailbreak
+
+            </label>
+
+            <input
+                id="autoJbInput"
+                type="checkbox">
+
+        </div>
+
+    </div>
+
+    <!-- Progress -->
+
+    <div class="progress-container">
+
+        <div id="progress-bar"></div>
+
+    </div>
+
+    <div id="status">
+
+        Ready...
+
+    </div>
+
+    <!-- Console -->
+
+    <div class="main-layout">
+
+        <div class="terminal-box">
+
+    <div class="terminal-header">
+
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+
+        <span class="terminal-title">
+            TERMINAL
+        </span>
+
+    </div>
+
+    <pre id="console">
+================================================
+        Yousef Store Host
+================================================
+
+System Ready
+
+Waiting for Launch...
+    </pre>
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+<footer>
+
+© 2026 Yousef Store • PS4 Jailbreak Host
+
+</footer>
+
+    <script src="src/main.js"></script>
+
+    <script src="includes/script.js"></script>
+
+</body>
+
+</html>

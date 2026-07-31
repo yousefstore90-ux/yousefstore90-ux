@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Orbitron',sans-serif;
+
+    background:
+    radial-gradient(circle at top,#1b2a52 0%,#0d1117 40%,#050608 100%);
+
+    color:#ffffff;
+
+    min-height:100vh;
+
+    text-align:center;
+
+    padding:12px;
+
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+    margin-bottom:25px;
+
+}
+
+
+h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:2px;
+
+    text-shadow:0 0 12px #00bfff;
+
+}
+
+.subtitle{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    color:#5db4ff;
+
+}
+
+.firmware{
+
+    margin-top:5px;
+
+    color:#bbbbbb;
+
+    font-size:15px;
+
+}
+
+#UA{
+
+    margin-top:15px;
+
+    color:#888;
+
+    font-size:13px;
+
+    word-break:break-all;
+
+}
+
+hr{
+
+    width:90%;
+
+    margin:25px auto;
+
+    border:none;
+
+    border-top:1px solid #2c3e50;
+
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-container{
+
+    margin-top:20px;
+
+}
+
+#kernel-options{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:20px;
+
+}
+
+.radio-card{
+
+    background:#121821;
+
+    border:2px solid #222;
+
+    padding:12px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.radio-card:hover{
+
+    border-color:#0099ff;
+
+    box-shadow:0 0 10px #0099ff66;
+
+}
+
+.radio-card span{
+
+    color:white;
+
+    font-size:17px;
+
+}
+
+input[type="radio"]{
+
+    margin-right:8px;
+
+}
+
+button{
+
+    background:linear-gradient(90deg,#0078ff,#00bfff);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:15px 45px;
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 0 18px #0078ff88;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 30px #00bfff;
+
+}
+
+button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+/* ================= AUTO ================= */
+
+.autoJb{
+
+    margin-top:18px;
+
+    font-size:16px;
+
+}
+
+#autoJbInput{
+
+    margin-left:8px;
+
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-container{
+
+    width:70%;
+
+    height:16px;
+
+    margin:30px auto 12px;
+
+    background:#161616;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid #333;
+
+}
+
+#progress-bar{
+
+   width:55%;
+height:10px;
+
+    background:linear-gradient(90deg,#00bfff,#00ff88);
+
+    transition:width .3s;
+
+}
+
+#status{
+
+    color:#00e0ff;
+
+    font-size:17px;
+
+    margin-bottom:25px;
+
+}
+
+/* ================= CONSOLE ================= */
+
+.main-layout{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+#console{
+
+    background:#050505;
+
+    color:#00ff66;
+
+    border-radius:0 0 15px 15px;
+
+    border:1px solid #1d3b2f;
+
+    box-shadow:0 0 25px rgba(0,255,120,.15);
+
+    padding:20px;
+
+    text-align:left;
+
+    font-family:Consolas,monospace;
+
+    font-size:15px;
+
+    height:220px;
+
+    overflow:auto;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:40px;
+
+    color:#888;
+
+}
+
+.footer-line{
+
+    width:80%;
+
+    margin:20px auto;
+
+    border-top:1px solid #333;
+
+}
+
+.footer-small{
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:13px;
+
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#008cff;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#00bfff;
+
+}
+
+
+.logo{
+
+    width:170px;
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+
+    filter:drop-shadow(0 0 18px #00bfff);
+
+}
+
+.header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+.terminal-box{
+
+    width:90%;
+    margin:auto;
+
+}
+
+.terminal-header{
+
+    background:#141414;
+
+    border:1px solid #222;
+
+    border-bottom:none;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 15px;
+
+    border-radius:15px 15px 0 0;
+
+}
+
+.dot{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    margin-right:8px;
+
+}
+
+.red{
+    background:#ff5f56;
+}
+
+.yellow{
+    background:#ffbd2e;
+}
+
+.green{
+    background:#27c93f;
+}
+
+.terminal-title{
+
+    margin-left:15px;
+
+    color:white;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+}
