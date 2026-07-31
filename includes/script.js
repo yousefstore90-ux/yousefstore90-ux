@@ -1,4 +1,4 @@
-let timerId = null;
+[31/07/2026 04:42] Omeha: let timerId = null;
 
 const label = document.getElementById("autoJbLabel");
 const checkbox = document.getElementById("autoJbInput");
@@ -41,7 +41,7 @@ function log(message) {
         ":" +
         now.getSeconds().toString().padStart(2, "0");
 
-    consoleBox.textContent += `\n[${time}] ${message}`;
+    consoleBox.textContent += \n[${time}] ${message};
 
     consoleBox.scrollTop = consoleBox.scrollHeight;
 }
@@ -165,14 +165,14 @@ function jailbreakCountdown() {
 
     let countdown = 5;
 
-    label.textContent = `Auto Jailbreaking in: ${countdown}`;
+    label.textContent = Auto Jailbreaking in: ${countdown};
 
     timerId = setInterval(() => {
 
         countdown--;
 
         label.textContent =
-            `Auto Jailbreaking in: ${countdown}`;
+            Auto Jailbreaking in: ${countdown};
 
         if (countdown < 0) {
 
@@ -223,8 +223,7 @@ function displayCacheProgress() {
 document.addEventListener("DOMContentLoaded", function () {
 
     if (window.applicationCache) {
-
-        window.applicationCache.addEventListener(
+[31/07/2026 04:42] Omeha: window.applicationCache.addEventListener(
             "progress",
             cacheProgress,
             false
